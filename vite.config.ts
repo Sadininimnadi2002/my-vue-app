@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-// 1. ADD THIS LINE BELOW
+import vue from '@vitejs/plugin-vue' // This must say 'plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // 2. ADD tailwindcss() INSIDE THE BRACKETS BELOW
-  plugins: [vue(), tailwindcss()],
+  plugins: [
+    vue(),
+    tailwindcss(),
+  ],
 })
